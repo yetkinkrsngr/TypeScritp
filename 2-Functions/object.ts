@@ -33,3 +33,26 @@ let welcoming = (person: Person) => {
 };
 
 console.log(welcoming({ name: "yetkin", age: 20 }));
+
+// nested obeject object içineki obje
+
+const describePerson = (person: {
+  named: string;
+  age: number;
+  parentNames: {
+    mom: string;
+    dad: string;
+  };
+}) => {
+  return `Person: ${person.named},
+    Age: ${person.age},
+    Parents: ${person.parentNames.mom}, ${person.parentNames.dad}`;
+};
+
+const personDescription = describePerson({
+  named: "yetkin",
+  age: 31,
+  parentNames: { mom: "cemile", dad: "şeref" },
+});
+
+console.log(personDescription);
