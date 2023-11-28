@@ -20,5 +20,5 @@ anyTypes = "1992";
 anyTypes = "merhaba Dünya";
 console.log(anyTypes.toUpperCase());
 
-var someComment: string = "deneme";
+var someComment = "deneme";
 console.log(someComment.toUpperCase());

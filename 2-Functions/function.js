@@ -15,3 +15,13 @@ var emailCheck = function (email) {
 };
 var result = emailCheck("abc@gmail.com");
 console.log(result);
+var defaultValue = function (defaultString) {
+    if (defaultString === void 0) { defaultString = "default"; }
+    return defaultString;
+};
+var colors = ["red", "blue", "yellow"];
+var bigColorss = new Array();
+var bigColors = colors.map(function (color) {
+    bigColorss.push(color.toUpperCase());
+});
+console.log(bigColorss);

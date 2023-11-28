@@ -16,3 +16,18 @@ let emailCheck = (email: string): string => {
 };
 let result = emailCheck("abc@gmail.com");
 console.log(result);
+
+let defaultValue = (defaultString: string = "default") => {
+  return defaultString;
+};
+
+let colors = ["red", "blue", "yellow"];
+let bigColorss = new Array();
+let bigColors = colors.map((color) => {
+  bigColorss.push(color.toUpperCase());
+});
+console.log(bigColorss);
+
+function aa() {
+  return 20 * 10;
+}
