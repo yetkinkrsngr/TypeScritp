@@ -1,2 +1,4 @@
-console.log("Hello World!");
-console.log("Hello World!");
+let btn = document.getElementById("app");
+btn?.addEventListener("click", () => {
+  console.log("Hello World");
+});
